@@ -1,0 +1,7 @@
+:root {
+    --primary-hard: hsl(257,40%,47%);
+    --primary-soft: hsl(300,69%,71%);
+    --title-font: 'Poppins';
+    --text-font: 'Open Sans';
+    --text-color: #fff;
+}

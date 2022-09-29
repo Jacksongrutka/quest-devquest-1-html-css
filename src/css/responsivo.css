@@ -1,0 +1,43 @@
+@media(max-width:425px){
+    main{
+        background: url(../images/bg-mobile.svg) center center;
+        background-color: var(--primary-hard);
+        display: block;
+        padding: 30px 35px;
+    }
+    .title-image h2{
+        font-size: 2.5rem;
+    }
+    .title-image img{
+        padding-top: 40px;
+        margin-bottom: 40px ;
+    }
+    .info{
+        margin: 0 0 80px 0 ;
+        text-align: center;
+    }
+    .info h1{
+        font-size: 2.5rem ;
+    }
+    .info p{
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        line-height: 25px;
+    }
+    .info .btn-register{
+        align-self: auto;
+    }
+    .info .btn-register h3{
+        padding: 10px 80px;
+        font-size: 1.5rem;
+    }
+    .social-media {
+        align-items: center;
+        justify-content: center;
+    }
+    .social-media ul li a{
+        font-size: 1.5rem;
+        height: 30px;
+        width: 30px;
+    }
+}

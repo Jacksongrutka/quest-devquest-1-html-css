@@ -1,0 +1,108 @@
+html{
+    font-size: 62.5%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    background: url(../images/bg-desktop.svg) center center;
+    background-color: var(--primary-hard);
+    background-size: cover;
+    max-width: 1440px;
+    padding: 50px 80px 30px 80px;
+    gap: 10px;
+    display: grid;
+    grid:
+        "image info" 1fr
+        "image social" 65px / 55% 1fr;
+        gap: 50px;
+}
+.title-image{
+    grid-area: image;
+}
+.title-image h2{
+    font-family: var(--title-font) , sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    color: var(--text-color , #fff);
+}
+.title-image img{
+    padding-top: 80px;
+    margin-bottom: 70px;
+}
+.info{
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.info h1{
+    font-family: var(--title-font) ,sans-serif;
+    font-size: 4rem;
+    color: var(--text-color , #fff);
+    text-transform: capitalize;
+    padding-bottom: 25px;
+    margin-top: 80px;
+}
+.info p{
+    font-family: var(--text-font), sans-serif;
+    color: var(--text-color , #fff);
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+    padding-bottom: 20px;
+
+}
+.info .btn-register{
+    background-color: #fff;
+    border-radius: 50px;
+    align-self: flex-start;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    transition: 0.3s ease-in-out;
+
+}
+.info .btn-register:hover{
+    background-color: var(--primary-soft , violet);
+}
+.info .btn-register:hover h3{
+    color: #fff;
+    transition: 0,3s ease-in-out;
+}
+.info .btn-register h3{
+    font-family: var(--title-font) ,sans-serif;
+    font-size: 2rem;
+    letter-spacing: -1px;
+    color: var(--primary-hard , blueviolet);
+    padding: 15px 60px;
+}
+.social-media{
+    grid-area: social;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.social-media ul{
+    display: flex;
+    gap: 15px;
+}
+.social-media ul li a{
+    color: #fff;
+    font-size: 2rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+.social-media ul li a:hover{
+    color: var(--primary-soft , violet);
+    border-color: var(--primary-soft , violet);
+
+}
